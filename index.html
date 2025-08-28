@@ -6,240 +6,308 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <title>Bootstrap Teste</title>
+    <!-- Bootstrap CSS já incluso-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Introdução ao Bootstrap</title>
 
   </head>
-  <body style="margin-bottom: 200px;padding: 16px;">
+  <body style="background-color: #999;">
+    <div style="width:95%; margin:0 auto;">
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">FORMATAÇÃO DE TÍTULOS (CLASSE H1 ATÉ H6)</h2>
+            <h1>Título 1</h1>
+            <h2>Título 2</h2>
+            <h3>Título 3</h3>
+            <h4>Título 4</h4>
+            <h5>Título 5</h5>
+            <h6>Título 6</h6>
+            <!-- Exercício: Aplicar a classe h1 em todos os títulos acima -->
+        </div>
 
-    <h1 class="bg-info text-center">FORMATAÇÃO DE TEXTOS COM BOOTSTRAP</h1>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">FORMATAÇÃO DE TÍTULOS (CLASSE DISPLAY 1 ATÉ DISPLAY 6)</h2>
+            <h1>Display 1</h1>
+            <h2>Display 2</h2>
+            <h3>Display 3</h3>
+            <h4>Display 4</h4>
+            <h5>Display 5</h5>
+            <h6>Display 6</h6>
+            <!-- Exercício: Aplicar as classes display-1 até display-6 em todos os títulos acima -->
+        </div>        
 
-    <!-- Cabeçalho -->
-    <h1>Cabeçalho 1</h1>
-    <h2>Cabeçalho 2</h2>
-    <h3>Cabeçalho 3</h3>
-    <h4>Cabeçalho 4</h4>
-    <h5>Cabeçalho 5</h5>
-    <h6>Cabeçalho 6</h6>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">CLASSE LEAD</h2>
+            <p>Este é um parágrafo de destaque.</p=>    
+            <!-- Exercício: Aplicar a classe lead no texto acima -->    
+        </div>        
 
-    <br>
-    <br>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">FORMATAÇÃO DE TEXTOS (FONTE MONOESPAÇADA)</h2>
+            <p>Exemplo de Fonte monoespaçada</p>
+            <!-- Exercício: Aplicar a fonte monoespaçada no texto acima -->
+        </div>       
 
-    <!-- display classes - Maior destaque -->
-    <h1 class="display-1">Display 1</h1>
-    <h1 class="display-2">Display 2</h1>
-    <h1 class="display-3">Display 3</h1>
-    <h1 class="display-4">Display 4</h1>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">FORMATAÇÃO DE TEXTOS (NEGRITO, ITÁLICO, SUBLINHADO)</h2>
+            <p>Texto em negrito</p>
+            <p>Texto com peso normal</p>
+            <p>Texto mais leve</p>
+            <p>Texto em italico</p>
+            <p>Texto em estilo normal (remove o italico)</p>
+            <p>Texto sublinhado</p>
+            <!-- Exercício: Aplicar os estilos de fonte indicados no seu texto correspondente -->
+        </div>  
 
-    <br>
-    <br>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">TRANSFORMAÇÃO DE TEXTOS (lETRA MAÍUSCULA, MINÚSCULA E CAPITULAR)</h2>
+            <p>texto escrito em letra minúscula mas transformado em maiúscula</p=>
+            <p>TEXTO ESCRITO EM LETRA MAIÚSCULA MAS TRANSFORMADO EM MINÚSCULA</p=>
+            <p>texto escrito em letra minúscula mas aplicado estilo da primeira letra de cada palavra em maiúscula</pass=>
+            <!-- Exercício: Aplicar as classes de transformação de texto ao seu correspondente -->
+        </div>  
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">ALINHAMENTO DE TEXTOS</h2>
+            <p>Esquerda</ps=>
+            <p>Centralizado</p=>
+            <p>Direita</pass=>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam reprehenderit fugiat odio voluptatibus nesciunt, quisquam sapiente voluptatum placeat ullam quidem recusandae corporis fugit numquam debitis, minima sint ipsam temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam reprehenderit fugiat odio voluptatibus nesciunt, quisquam sapiente voluptatum placeat ullam quidem recusandae corporis fugit numquam debitis, minima sint ipsam temporibus! </p>
+            <!-- Exercício: Aplicar as classes de transformação de texto ao seu correspondente -->
+        </div> 
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">BLOCO DE CITAÇÃO</h2>
+            <blockquote">
+            <p>Esta é uma citação formatada pelo Bootstrap.</p>
+            </blockquote>
+            <!-- Exercício: Aplicar o estilo de formatação blockquote -->
+        </div>    
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">CONTROLE DE QUEBRA DE TEXTO</h2>
+            <p>
+            Este é um texto muito longo que terá seu conteúdo cortado se o texto ultrapassar a largura do elemento ou da janela de visualização.
+            </p>
+            <!-- Exercício: Aplicar a classe nowrap neste bloco de texto -->
+            <p>
+            Este é um texto muito longo que não terá seu conteúdo cortado se o texto ultrapassar a largura do elemento ou da janela de visualização.
+            </p>
+            <!-- Exercício: Aplicar a classe wrap neste bloco de texto -->
+            <p>
+            Este é um texto muito longo que não terá seu conteúdo cortado se o texto ultrapassar a largura do elemento ou da janela de visualização com a diferença de que em alguns navegadores ele mostra o texto inteiro quando o mouse está em cima dele.
+            </p>
+            <!-- Exercício: Aplicar a classe truncate neste bloco de texto -->
+        </div>  
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">ESTILOS DE LISTA</h2>
+            <ul>
+                <li>Item sem marcador 1</li>
+                <li>Item sem marcador 2</li>
+                <li>Item sem marcador 3</li>
+            </ul>
+            <!-- Exercício: Remover o estilo de lista (bolinhas ou numeros) desta lista -->
 
-    <!-- Parágrafo -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+            <ul">
+                <li>Item 1</liss=>
+                <li>Item 2</lis=>
+                <li>Item 3</li>
+            </ul>   
+            <!-- Exercício: Remover o estilo de lista (bolinhas ou numeros) desta lista e colocar os itens de lista sem o recuo padrão à esquerda-->         
+        </div> 
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">ALINHAMENTO RESPONSIVO</h2>
+            <p>Tela &gt;= 576px</p=><!--Small-->
+            <p>Tela &gt;=  768px</p><!--Medium-->
+            <p>Tela &gt;= 992px</pclass=><!--Large-->
+            <p>Tela &gt;= 1200px</p><!--Extra Large-->
+            <p>Tela &gt;= 1400px</p><!--Extra Extra Large-->
+            <!-- Exercício: Aplique a classe de alinhamento mas de acordo com o tamanho da tela do dispositivo (responsivo)  -->
+        </div>   
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">ELEMENTOS BLOCK E INLINE</h2>
+            <h2>Este é um elemento do tipo bloco que foi convertido para inline</h2>
+            <p>Este é um elemento do tipo bloco que foi convertido para inline</p>
+            <!-- Exercício: Converta estes dois itens de bloco em inline -->
+            <br><br>
+            <span>Este é um elemento do tipo inline que foi convertido para bloco</span><br>
+            <span>Este é um elemento do tipo inline que foi convertido para bloco</span>            
+            <!-- Exercício: Converta estes dois itens inline em bloco -->
+        </div>   
 
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">ELEMENTOS FLUTUANTES</h2>
+            <div style="border: 1px solid red;">
+                <div class="bg-success">Float Left (Esquerda)</div>
+                <!-- Exercício: Aplique o float left nesta div -->
+                <div class="bg-warning">Float Right (Direita)</div>
+                <!-- Exercício: Aplique o float right nesta div -->
+            </div>         
+        </div>  
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">POSICIONAMENTO FIXO (TOP E BOTTOM)</h2>
+            <p class="bg-warning">Este é o texto de exemplo para o conteúdo fixo na parte superior (top)</p>
+            <!-- Exercício: Aplique o posicionamento fixo top neste texto -->
+            <p class="bg-success">Este é o texto de exemplo para o conteúdo fixo na parte inferior (bottom)</p>        
+            <!-- Exercício: Aplique o posicionamento fixo bottom neste texto -->
+        </div>     
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">FLOAT RESPONSIVO</h2>
+            <div class="bg-warning w-25">tela &gt;= 576px * </div><br><!--Small-->
+            <div class="bg-warning w-25">tela &gt;=  768px * </div><br><!--Medium-->
+            <div class="bg-warning w-25">tela &gt;= 992px * </div><br><!--Large-->
+            <div class="bg-warning w-25">tela &gt;= 1200px * </div><br><!--Extra Large-->
+            <div class="bg-warning w-25">tela &gt;= 1400px * </div><br><!--Extra Extra Large-->   
+            <!-- Exercício: Aplique o float responsivo nestas divs de acordo com o tamanho do dispositivo -->   
+        </div>     
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">COLAR NO TOPO (STICK)</h2>
+            <ul class="list-inline bg-warning">
+                <li class="list-inline-item">Item 1</li>
+                <li class="list-inline-item">Item 2</li>
+                <li class="list-inline-item">Item 3</li>
+                <!-- Exercício: Aplique o efeito stick (colar) na parte superior neste elemento -->
+            </ul> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>      
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>      
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>   
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>      
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>                            
+                                 
+        </div>         
+        
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">CORES E BACKGROUNDS</h2>
+            <!-- Classes para formatação de textos -->
+            <h1>Texto primary</h1>
+            <h1>Texto secondary</h1>
+            <h1>Texto success</h1>
+            <h1>Texto info</h1>
+            <h1>Texto warning</h1>
+            <h1>Texto danger</h1>
+            <h1>Texto light</h1>
+            <h1>Texto dark</h1>
+            <h1>Texto white</h1>
+            <h1>Texto black 50</h1>
+            <h1>Texto white</h1>    
+            <!-- Exercício: Aplique as classes de cores correspondentes em cada texto -->
+            <br><br>
+            <!-- Formatação de links -->
+            <a href="#">Link primary</a><br>
+            <a href="#">Link secondary</a><br>
+            <a href="#">Link success</a><br>
+            <a href="#">Link info</a><br>
+            <a href="#">Link warning</a><br>
+            <a href="#">Link danger</a><br>
+            <a href="#">Link light</a><br>
+            <a href="#">Link dark</a><br>
+            <a href="#">Link white</a><br>   
+            <!-- Exercício: Aplique as classes de cores correspondentes em cada link -->
+            <br><br>
+            <!-- Backgrounds -->
+            <div>Background primary</divs=>
+            <div>Background secondary</divss=>
+            <div>Background success</div>
+            <div>Background info</divss=>
+            <div>Background warning</divs=>
+            <div>Background danger</div>
+            <div>Background light</divs=>
+            <div>Background dark</div=>
+            <div>Background white</div=>
+            <div>Background transparent</div>
+            <!-- Exercício: Aplique as classes de cores correspondentes em cada div -->
+        </div>  
 
-    <br>
-    <br>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">MARGIN E PADDING</h2>
+            <!-- Margin -->
+            <p class="bg-primary">Margin Right (direita)</p>
+            <p class="bg-secondary">Margin Left (esquerda)</p>
+            <p class="bg-info">Margin Top (superior)</p>
+            <p class="bg-warning">Margin Botton (inferior)</p>
+            <p class="bg-danger">Margin no eixo y (bottom e top ao mesmo tempo)</p>
+            <p class="bg-success">Margin no eixo x (left e right ao mesmo tempo)</p>
+            <p class="bg-info">Margin nos quatro lados (left, right, botton e top ao mesmo tempo)</p>   
+            <!-- Exercício: Aplique a distância externa com tamanho 5 (margin) em cada um destes elementos de acordo com seu texto -->
+            <br><br>
+            <!-- Padding -->
+            <p class="bg-primary">Padding Right (direita)</p>
+            <p class="bg-secondary">Padding Left (esquerda)</p>
+            <p class="bg-info">Padding Top (superior)</p>
+            <p class="bg-warning">Padding Botton (inferior)</p>
+            <p class="bg-danger">Padding no eixo y (bottom e top ao mesmo tempo)</p>
+            <p class="bg-success">Padding no eixo x (left e right ao mesmo tempo)</p>
+            <p class="bg-info">Padding nos quatro lados (left, right, botton e top ao mesmo tempo)</p>  
+            <!-- Exercício: Aplique a distância interna com tamanho 5 (padding) em cada um destes elementos de acordo com seu texto -->           
+        </div>    
 
-    <!-- Parágrafo Monospace -->
-    <p class="text-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">TAMANHOS (LARGURA, ALTURA)</h2>
+            <div style="margin-bottom: 200px; width: 800px; margin: 0 auto;">
+                <!-- classes de largura -->
+                <div class="bg-primary">width 25%</div>
+                <div class="bg-primary">width 50%</div>
+                <div class="bg-primary">width 75%</div>
+                <div class="bg-primary">width 100%</div>
+                <div class="bg-primary">width auto</div>
+                <!-- Exercício: Aplique as classes de largura para cada div de acordo com o tamanho especificado no seu texto -->           
+                <br>
+                <!-- classes de altura -->
+                <div style="height: 300px;border: 1px solid gray;">
+                    <div class="bg-warning d-inline-block">height 25%</div>
+                    <div class="bg-warning d-inline-block">height 50%</div>
+                    <div class="bg-warning d-inline-block">height 75%</div>
+                    <div class="bg-warning d-inline-block">height 100%</div>
+                    <div class="bg-warning d-inline-block">height auto</div>
+                    <!-- Exercício: Aplique as classes de altura para cada div de acordo com o tamanho especificado no seu texto -->           
+                </div>  
+                <br>                     
+            </div>
+        </div> 
 
-    <br>
-    <br>
-
-    <!-- Classes de estilo -->
-    <p class="font-weight-bold">Texto Negrito</p>
-    <p class="font-weight-normal">Texto Normal</p>
-    <p class="font-italic">Texto Itálico</p>
-
-    <br>
-    <br>
-
-    <!-- Transformação de textos -->
-    <p class="text-uppercase">Letras Maiúscula</p>
-    <p class="text-lowercase">Letras Minúscula</p>
-    <p class="text-capitalize">primeira maiúscula</p>
-
-    <br>
-    <br>
-
-    <!-- Alinhamentos -->
-    <p class="text-right">Direita</p>
-    <p class="text-left">Esquerda</p>
-    <p class="text-center">Centralizado</p>
-
-    <br>
-    <br>
-
-    <!-- Bloco de citação -->
-    <blockquote class="blockquote">
-      <p>Esse é um bloco de citação!</p>
-    </blockquote>
-
-    <br>
-    <br>
-
-    <!-- Bloco de citação com rodapé -->
-    <blockquote class="blockquote text-right">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-      <footer class="blockquote-footer">por 
-        <cite>Jamilton Damasceno</cite>
-      </footer>
-    </blockquote>
-
-    <br>
-    <br>
-
-    <!-- Truncate -->
-    <p class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <br>
-    <br>
-
-    <!-- Listas sem estilo -->
-    <ul class="list-unstyled">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-
-    <!-- Listas inline -->
-    <ul class="list-inline">
-      <li class="list-inline-item">Item 1</li>
-      <li class="list-inline-item">Item 2</li>
-      <li class="list-inline-item">Item 3</li>
-    </ul>
-
-  <h1 class="bg-info text-center">ALINHAMENTO DE TEXTOS COM BOOTSTRAP</h1>    
-
-<!-- Parágrafo justificado -->
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <br>
-    <br>
-
-    <!-- 
-        Alinhamento responsivo - 
-        class text-<tela>-<alinhamento>
-            tela: sm, md, lg, xl
-            alinhamento: left, center, right
-     -->
-    <p class="text-sm-center">tela &gt;= 576px</p><!--Small-->
-    <p class="text-md-center">tela &gt;=  768px</p><!--Medium-->
-    <p class="text-lg-center">tela &gt;= 992px</p><!--Large-->
-    <p class="text-xl-center">tela &gt;= 1200px</p><!--Extra Large-->
-
-    <br>
-    <br>
-
-    <!-- Elemento Block para inline -->
-    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
-    <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-    <br>
-    <br>
-
-    <!-- Elemento Inline para Block -->
-    <span class="bg-success d-block">Lorem ipsum dolor 1</span>
-    <br>
-    <span class="bg-success d-block">Lorem ipsum dolor 2</span>
-
-    <br>
-    <br>
-
-    <!-- Elemento Inline-Block -->
-    <div class="bg-warning">
-        <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
-        <h3 class="bg-success d-inline-block" style="margin-top: 50px;width: 400px;">Lorem ipsum dolor</h3>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">BORDAS</h2>
+            <div class="bg-white mb-2 p-1 m-2 w-25">todas as bordas</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda superior</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda inferior</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda direita</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda esquerda</div>  
+            <!-- Exercício: Aplique as classes de borda para cada div de acordo com o tamanho especificado no seu texto -->             
+        </div>   
+        <br>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">BORDAS COM CORES ESPECÍFICAS</h2>
+            <div class="bg-white mb-2 p-1 m-2 w-25">todas as bordas na cor vermelha</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda superior na cor vermelha</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda inferior na cor vermelha</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda direita na cor vermelha</div>
+            <div class="bg-white mb-2 p-1 m-2 w-25">borda esquerda na cor vermelha</div>  
+            <!-- Exercício: Aplique as classes de borda para cada div de acordo com o tamanho especificado no seu texto e na cor vermelha (classe danger)-->             
+        </div>    
+        <br>
+        <div class="mb-3 bg-light">
+            <h2 class="bg-info text-center">BORDAS ARREDONDADAS</h2>
+            <div class="bg-secondary mb-2 p-1 m-2 w-25">todas as bordas arredondadas</div>
+            <div class="bg-secondary mb-2 p-1 m-2 w-25">borda superior arredondada</div>
+            <div class="bg-secondary mb-2 p-1 m-2 w-25">borda inferior arredondada</div>
+            <div class="bg-secondary mb-2 p-1 m-2 w-25">borda direita arredondada</div>
+            <div class="bg-secondary mb-2 p-1 m-2 w-25">borda esquerda arredondada</div>  
+            <!-- Exercício: Aplique as classes de borda arredondada para cada div de acordo com o local da borda especificado no seu texto-->       
+        <br><br>         
+        </div>                 
     </div>
-<br>
-<h1 class="bg-info text-center">ELEMENTOS FLUTUANTES</h1>    
-
-<!-- Elementos flutuantes -->
-    <div style="border: 1px solid red;" class="clearfix">
-        <div class="bg-success float-left">Float Left</div>
-        <div class="bg-warning float-right">Float Right</div>
-    </div>
-
-    <!-- Posicionamento fixo - top e bottom -->
-    <h1 class="bg-success fixed-bottom">Título do conteúdo fixo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <!-- 
-        Float responsivo - float-<tela>-<direcao>
-            tela: sm, md, lg, xl
-            alinhamento: left, right
-     -->
-    <div class="float-sm-right">tela &gt;= 576px * </div><!--Small-->
-    <div class="float-md-right">tela &gt;=  768px * </div><!--Medium-->
-    <div class="float-lg-right">tela &gt;= 992px * </div><!--Large-->
-    <div class="float-xl-right">tela &gt;= 1200px * </div><!--Extra Large-->
-
-    <br>
-    <br>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <!-- Colar no topo (sticky) -->
-    <ul class="list-inline bg-warning sticky-top">
-      <li class="list-inline-item">Item 1</li>
-      <li class="list-inline-item">Item 2</li>
-      <li class="list-inline-item">Item 3</li>
-    </ul>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-    <h1>Título do conteúdo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
